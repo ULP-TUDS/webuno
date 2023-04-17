@@ -1,55 +1,16 @@
-body{
-  padding:0px;
-  margin:0px;
+body {
+  padding: 0px;
+  margin: 0px;
 }
-.container {
+.contenedor {
   height: 100%;
   min-height: 100%;
-  margin: 0;
+}
+.construccion {
+  position: fixed;
+  margin-top: 10px;
   padding: 20px;
+  align-items: center;
   text-align: center;
   border: 0px solid #e92107;
-}
-.alert {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  background-color: #e92107;
-  color: rgb(255, 255, 255);
-}
-/* seccion menu lateral */
-.menu-lateral{
-  position: fixed;
-  margin-top: -100%;
-  /* border: 10px solid #2acc09; */
-  z-index: 1050;
-}
-.boton-menu {
-  background: rgb(233, 59, 15);
-  border-radius: 10px 20px 30px 40px;
-  padding: 5px;
-  width: 50px;
-  height: 30px;
-}
-.menu-lateral-2 {
-  position: fixed; /* para fijar el div */
-  top: 50%; /* para centrarlo verticalmente */
-  left: 0; /* para fijarlo en el lateral izquierdo */
-  transform: translateY(-50%); /* para ajustar la posición vertical */
-}
-.menu-lateral-3{
-  position: fixed;
-  top: 50%;
-  left: -80px;
-  transform: translateY(-50%);
-  /*transition: transform 0.3s ease; /* para agregar transición suave */
-}
-.menu-lateral-3:hover {
-  transform: translate(80px, -50%); /* para desplazar el div hacia la derecha */
-}
-.menu-lateral-3:not(:hover) {
-  left: 0; /* volver a la posición original */
-  transition-delay: 2s; /* agregar un retraso de 2 segundos después de que el cursor se retire */
 }
