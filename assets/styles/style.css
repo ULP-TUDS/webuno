@@ -20,22 +20,38 @@ body {
   color: var(--turquoise-dark);
   border-bottom: solid 3px var(--orange-medium);
 }
+/* .menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+} */
+
 .menu {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
+
 .logo {
   width: 5vw;
   min-width: 20px;
-  margin-top: 1vw;
-  margin-left: 1vw;
-  /* border: solid 1px red; */
+  position: fixed;
+  margin-top: -1.5rem;
+  margin-left: -15rem;
+  border: solid 1px red;
   border-radius: 50%;
   /* padding: 0.5vw; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
-
-  /* padding-left: 1vw;
-  padding-top: 1vw; */
 }
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 nav a:link,
 a:visited,
@@ -43,7 +59,8 @@ a:active {
   color: var(--turquoise-dark);
   text-decoration: none;
   font-size: 1rem;
-  padding: 2%;
+  padding: 2rem;
+  font-size: 1.5rem;
 }
 footer {
   position: fixed;
