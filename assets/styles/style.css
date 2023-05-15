@@ -67,8 +67,8 @@ a:active {
 }
 
 .logo-favl img { 
-  width: 6vw;
-  min-width: 40px;
+  width: 5vw;
+  min-width: 30px;
   margin-right: 5px;
   border-radius: 50%;
 
@@ -88,8 +88,8 @@ a:active {
 }
 
 .redes img {
-  width: 4vw;
-  min-width: 32px;
+  width: 3vw;
+  min-width: 25px;
   margin-right: 5px;
   border-radius: 50%;
 }
