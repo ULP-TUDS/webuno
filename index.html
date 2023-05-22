@@ -3,26 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css" />
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <title>WEB UNO</title>
   </head>
   <body>
-    <div class="contenedor"></div>
+    <div class="contenedor"style='background-image: url("./assets/img/galeria/web1_11.jpg");' ></div>
     <script>
       const contenedor = document.getElementsByClassName("contenedor")[0];
       const imagenes = [
-        "../../assets/img/galeria/web1_2.jpg",
-        "../../assets/img/galeria/web2_2.jpg",
-        "../../assets/img/galeria/web3_2.jpg",
+        "./assets/img/galeria/web1_1.jpg",
+        "./assets/img/galeria/web1_2.jpg",
+        "./assets/img/galeria/web1_3.jpg",
+        "./assets/img/galeria/web1_4.jpg",
+        "./assets/img/galeria/web1_5.jpg",
+        "./assets/img/galeria/web1_6.jpg",
+        "./assets/img/galeria/web1_7.jpg",
+        "./assets/img/galeria/web1_8.jpg",
+        "./assets/img/galeria/web1_9.jpg",
+        "./assets/img/galeria/web1_10.jpg",
+        "./assets/img/galeria/web1_11.jpg",
+        "./assets/img/galeria/web1_12.jpg",
       ];
       var indice = 0;
-
       function cambioImagenBack() {
-        contenedor.style.backgroundImage = "url('" + imagenes[indice] + "')";
+//	  Math.floor(Math.random() * (0 - 2min + 1)) + min;
+        contenedor.style.backgroundImage = 'url("' + imagenes[indice] + '")';
         indice = (indice + 1) % imagenes.length;
       }
-      setInterval(cambioImagenBack(), 1000);
+      setInterval(cambioImagenBack, 3000);
       //
       // contenedor.style.backgroundColor = "blue";
       // contenedor.src = "../../assets/img/galeria/web1_2.jpg";
