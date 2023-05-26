@@ -45,11 +45,14 @@ body {
   text-align: justify;
   font-size: calc(16px + 0.8vw);
   font-style: italic;
-  color: var(--blue-ligth);
+  color: white;
+
+  /* color: var(--blue-ligth); */
   white-space: pre-line;
-  background-image: url(/assets/img/galeria/web1_15.jpg);
+  background-image: url(/assets/img/galeria/web1_18.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  /* background-size: 90%; */
 }
 .contenedor p {
   padding: 5vw;
