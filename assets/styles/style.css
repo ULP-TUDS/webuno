@@ -9,19 +9,7 @@
   --turquoise-medium: #10a5b3;
   --turquoise-dark: #0b737d;
 }
-/*
-body {
-  height: 100%; */
-/* margin: 0; */
-/* display: flex; */
-/* justify-content: center; */
-/* align-items: center; */
-/* padding: 0px; */
-/* margin: 0px; */
-/* width: 100vw; */
-/* height: 100vw;
-}
-*/
+
 body {
   display: flex;
   flex-direction: column;
@@ -40,7 +28,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 80vw;
-  height: 70%;
+  height: 74vh;
   border-radius: 5vh 15vw 5vh 15vw;
   margin-top: 7vw;
   text-align: justify;
@@ -49,13 +37,13 @@ body {
   color: white;
   /* color: var(--blue-ligth); */
   white-space: pre-line;
-  background-image: url("../img/galeria/web1_18.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
+
 .contenedor p {
-  padding: 5vw;
-  text-shadow: 5px 5px 5px rgba(4, 4, 4, 0.9);
+  /* padding: 1vw; */
+  line-height: 1.5em;
+  color: #02476e;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0, 1);
   /* filter: blur(5px); */
 }
 .referencia {
@@ -147,7 +135,7 @@ footer {
   margin-right: 8vw;
 }
 
-.redes img {
+.redes a img {
   width: 3vw;
   min-width: 20px;
   margin-right: 5px;
@@ -206,6 +194,59 @@ footer {
   max-width: 100%;
   border-radius: 5%;
   object-fit: cover;
+}
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60vw;
+  height: 74vh;
+  text-align: justify;
+  font-size: calc(16px + 0.8vw);
+  font-style: italic;
+  color: var(--turquoise-dark);
+  white-space: pre-line;
+  /* width: 600px; */
+  border: 1px solid var(--blue-dark);
+  background-color: var(--blue-ligth);
+  /* background-color: var(--blue-medium); */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 5px rgba(1, 65, 77, 0.19);
+}
+.form-contacto {
+  /* border: 1px solid var(--blue-dark); */
+  border-radius: 5px;
+  width: 50vw;
+  min-width: 250px;
+  height: 1vw;
+  padding: 5px;
+  margin-top: 10px;
+  min-height: 30px;
+}
+/* css por id*/
+
+#index {
+  background-image: url("../img/galeria/web1_18.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#detalle {
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  height: 100px;
+  min-height: 80px;
+}
+.form-contacto #enviar {
+  width: 2px;
+  min-width: 30px;
+  max-width: 35px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: flex-end; */
+  background-color: #ab420a;
 }
 
 /******/

@@ -11,11 +11,28 @@
     <div class="contenedor">
       <nav class="menu">
         <img class="logo" src="./assets/img/logo_250.png" />
-        <a href=" ./home.html">Home</a>
+        <a href=" ./index.html">Home</a>
         <a href=" ./galeria.html">Galeria</a>
-        <a href=" ./zonas.html">Zonas</a>
         <a href=" ./contacto.html">Contacto</a>
       </nav>
+      <div class="contacto">
+        <form action="" method="post">
+          <div>
+              <label for="nombre">Nombre</label>
+              <input id="nombre"class="form-contacto" type="text" name="nombre" value="Nombre" required></input>
+              <label for="apellido">Apellido</label>            
+              <input id="apellido" class="form-contacto" type="text" name="apellido" value="Apellido"  maxlength="50" required></input>
+              <label for="nombre">Email</label>
+              <input id="mail" class="form-contacto" type="email" name="email" value="Email" required></input>
+              <label for="nombre">Asunto</label>
+              <input id="consulta" class="form-contacto" type="text" name="asunto" value="Consulta"  maxlength="50" required></input>
+              <!-- <input id="detalle" class="form-contacto" type="texta" name="detalle" value="Detalle"  maxlength="50" required>Detall</input> -->
+              <label for="nombre">Detalle</label>
+              <textarea id="detalle" class="form-contacto" rows="10" cols="50" placeholder="Ingresa tu texto"></textarea>
+              <button class="form-contacto" type="submit" id="enviar">Enviar consulta</button>
+          </div>
+        </form>
+      </div>
       <footer>
         <div class="logo-favl">
           <img
@@ -25,9 +42,9 @@
         </div>
         <div class="marca">Parapente San Luis &copy; 2023</div>
         <div class="redes">
-          <img src="./assets/img/icons/fb.jpg" alt="Facebook link" />
-          <img src="./assets/img/icons/wsp.jpg" alt="Whatsapp link" />
-          <img src="./assets/img/icons/ytb.jpg" alt="YouTuBe link" />
+          <a href="https://www.facebook.com/parapenteSL" target="_blank"><img src="./assets/img/icons/fb.jpg" alt="Facebook link" /></a>
+          <a href="https://api.whatsapp.com/send?phone=55555555&text=Contacto,%20¿quiero%20volar?" target="_blank"><img src="./assets/img/icons/wsp.jpg" alt="Whatsapp link" /></a>
+          <a href="https://www.youtube.com/channel/UCGbG07mqfVxZSK2Cnt_yyGA" target="_blank"><img src="./assets/img/icons/ytb.jpg" alt="YouTuBe link" /></a>
         </div>
       </footer>
     </div>
