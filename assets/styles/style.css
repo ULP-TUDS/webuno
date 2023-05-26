@@ -47,7 +47,7 @@ body {
   font-style: italic;
   color: var(--blue-ligth);
   white-space: pre-line;
-  background-image: url(/assets/img/galeria/web1_15.jpg);
+  background-image: url(./assets/img/galeria/web1_15.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
