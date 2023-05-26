@@ -10,17 +10,6 @@
   --turquoise-dark: #0b737d;
 }
 body {
-  /* height: 100%; */
-  /* margin: 0; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* padding: 0px; */
-  /* margin: 0px; */
-  /* width: 100vw; */
-  /* height: 100vw; */
-}
-body {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -187,7 +176,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  box-sizing: border-box; /* Agregado */
+  box-sizing: border-box; 
 }
 
 .item {
@@ -195,7 +184,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box; /* Agregado */
+  box-sizing: border-box; 
 }
 
 .item img {
@@ -235,7 +224,7 @@ footer {
     border-radius: 0 0 0 0;
     font-size: calc(14px + 0.5vw);
     line-height: 1.5em;
-    background-image: url(/assets/img/galeria/web1_17.jpg);
+    background-image: url(assets/img/galeria/web1_17.jpg);
     background-size: 150vw;
   }
   .contenedor p {
@@ -286,19 +275,18 @@ footer {
 
 .slider {
   display: flex;
-  overflow-x: scroll; /* Habilita el desplazamiento horizontal */
-  scroll-snap-type: x mandatory; /* Establece el desplazamiento en modo obligatorio */
-  scrollbar-width: none; /* Oculta la barra de desplazamiento */
-  -ms-overflow-style: none; /* Oculta la barra de desplazamiento en IE/Edge */
+  overflow-x: scroll; 
+  scroll-snap-type: x mandatory; 
+  scrollbar-width: none;
 }
 
 .slider::-webkit-scrollbar {
-  display: none; /* Oculta la barra de desplazamiento en Webkit */
+  display: none; 
 }
 
 .slider img {
   flex: 0 0 auto;
-  scroll-snap-align: start; /* Asegura que las imágenes se alineen correctamente */
+  scroll-snap-align: start;
   width: 50%;
   height: auto;
   object-fit: cover;
