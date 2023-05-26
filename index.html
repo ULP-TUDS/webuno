@@ -3,40 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
     <title>WEB UNO</title>
   </head>
   <body>
-    <div class="contenedor"style='background-image: url("./assets/img/galeria/web1_11.jpg");' ></div>
-    <script>
-      const contenedor = document.getElementsByClassName("contenedor")[0];
-      const imagenes = [
-        "./assets/img/galeria/web1_1.jpg",
-        "./assets/img/galeria/web1_2.jpg",
-        "./assets/img/galeria/web1_3.jpg",
-        "./assets/img/galeria/web1_4.jpg",
-        "./assets/img/galeria/web1_5.jpg",
-        "./assets/img/galeria/web1_6.jpg",
-        "./assets/img/galeria/web1_7.jpg",
-        "./assets/img/galeria/web1_8.jpg",
-        "./assets/img/galeria/web1_9.jpg",
-        "./assets/img/galeria/web1_10.jpg",
-        "./assets/img/galeria/web1_11.jpg",
-        "./assets/img/galeria/web1_12.jpg",
-      ];
-      var indice = 0;
-      function cambioImagenBack() {
-//	  Math.floor(Math.random() * (0 - 2min + 1)) + min;
-        contenedor.style.backgroundImage = 'url("' + imagenes[indice] + '")';
-        indice = (indice + 1) % imagenes.length;
-      }
-      setInterval(cambioImagenBack, 3000);
-      //
-      // contenedor.style.backgroundColor = "blue";
-      // contenedor.src = "../../assets/img/galeria/web1_2.jpg";
-      // contenedor.style.backgroundImage =
-      //   " url('../../assets/img/galeria/web1_2.jpg')";
-    </script>
+    <!-- <div class="contenedor"> -->
+    <nav class="menu">
+      <img class="logo" src="./assets/img/logo_250.png" />
+      <a href=" ./home.html">Home</a>
+      <a href=" ./galeria.html">Galeria</a>
+      <a href=" ./zonas.html">Zonas</a>
+      <a href=" ./contacto.html">Contacto</a>
+    </nav>
+    <div class="contenedor">
+    <!-- <h1>Una vez que hayas probado el vuelo, caminarás por la tierra con los ojos vueltos hacia el cielo, porque allí has ​​estado y allí anhelas volver.</h1>Una vez que hayas probado el vuelo, caminarás por la tierra con los ojos vueltos hacia el cielo, porque allí has ​​estado y allí anhelas volver.</h1> -->
+    <!-- <h1>Corre, el borde esta cerca. Continua, sin miedo al vacío. Tu ala te sostiene. La tierra se aleja; alli esta elevas sin límites debajo de ti. No tengas miedo. Tus alas son tu salvación aunque caigas en picado; los dolores serán leves, lo sé. Y una vez que hayas probado el vuelo caminarás por la tierra con los ojos vueltos hacia el cielo; porque allí has ​​estado, y allí regresarías.</h1> -->
+    
+    <!-- <div class="frase"> -->
+      <p>
+      "Corre, el borde está cerca. Continúa sin miedo al vacío.
+      El ala te sostiene mientras la tierra se aleja.
+      Elevándote, percibes cómo la tierra se extiende sin límites bajo tus pies.
+      No temas, tu ala te sostiene, incluso cuando creas que caerás en picada, volarás.
+      Tendrás sensaciones y recuerdos inolvidables.
+      Hazlo, volverás una y otra vez."
+    </p>
+    <!-- </div> -->
+    <!-- <p class="referencia">Rafa Lopez</p> -->
+    </div>
+    <!-- <div class="carrusel">
+      <div class="item">
+        <img src="./assets/img/galeria/web1_1.jpg"/>
+       </div>   
+       <div class="item">
+        <img src="./assets/img/galeria/web1_2.jpg"/>
+       </div>   
+      <div class="item">
+        <img src="./assets/img/galeria/web1_3.jpg"/>
+       </div>   
+      <div class="item">
+        <img src="./assets/img/galeria/web1_5.jpg"/>
+      </div>
+     </div> -->
+     <!-- <div class="carrusel2">
+      <div class="slider">
+        <img src="./assets/img/galeria/web1_1.jpg" alt="Imagen 1" />
+        <img src="./assets/img/galeria/web1_2.jpg" alt="Imagen 2" />
+        <img src="./assets/img/galeria/web1_3.jpg" alt="Imagen 3" />
+        <img src="./assets/img/galeria/web1_4.jpg" alt="Imagen 4" />
+        <img src="./assets/img/galeria/web1_5.jpg" alt="Imagen 5" />
+      </div>
+    </div> -->
+
+    <p class="txt-mars">
+      <svg aria-hidden="true" focusable="false" class="icon" viewBox="0 0 512 512" width="1em" height="1em">
+        <use xlink:href="assets\img\icons\arrow_chevron_left_icon_176221.svg"></use>
+      </svg>
+      </svg>
+    </p>
+     <footer>
+      <div class="logo-favl">
+        <img
+          src="./assets/img/logo_favl_512x512.png"
+          alt="Federacion Argentina de Vuelo Libre"
+        />
+      </div>
+      <div class="marca">Parapente San Luis &copy; 2023</div>
+      <div class="redes">
+        <img src="./assets/img/icons/fb.jpg" alt="Facebook link" />
+        <img src="./assets/img/icons/wsp.jpg" alt="Whatsapp link" />
+        <img src="./assets/img/icons/ytb.jpg" alt="YouTuBe link" />
+      </div>
+    </footer>
+    <!-- </div> -->
   </body>
 </html>

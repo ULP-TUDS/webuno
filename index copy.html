@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <title>WEB UNO</title>
+  </head>
+  <style>
+    .galeria {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .galeria-row {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+    }
+    .galeria-item {
+      width: 17vw;
+      height: 17vw;
+      margin: 10px;
+      min-width: 240px;
+      border-radius: 10px;
+      background-color: lightgray;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .galeria-item img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+
+    @media (max-width: 800px) {
+      .galeria-item {
+        flex-direction: column;
+      }
+      .galeria-row {
+      flex-direction: column;
+      }
+      .galeria-item {
+         flex-direction: column;
+         width: 25vw;
+         height: 25vw;
+         min-width: 350px;
+         min-height: 350 px;
+    }
+  </style>
+  <body>
+    <div class="galeria">
+      <div class="galeria-row">
+        <div class="galeria-item">
+          <img src="imagen1.jpg" alt="Imagen 1" />
+        </div>
+        <div class="galeria-item">
+          <img src="imagen1.jpg" alt="Imagen 1" />
+        </div>
+        <div class="galeria-item">
+          <img src="imagen1.jpg" alt="Imagen 1" />
+        </div>
+        <div class="galeria-item">
+          <img src="imagen1.jpg" alt="Imagen 1" />
+        </div>
+      </div>
+      <div class="galeria-row">
+        <div class="galeria-item">
+          <img src="imagen1.jpg" alt="Imagen 1" />
+        </div>
+        <div class="galeria-item">
+          <img src="imagen1.jpg" alt="Imagen 1" />
+        </div>
+        <div class="galeria-item">
+          <img src="imagen1.jpg" alt="Imagen 1" />
+        </div>
+        <div class="galeria-item">
+          <img src="imagen1.jpg" alt="Imagen 1" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

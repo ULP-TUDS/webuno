@@ -10,57 +10,32 @@
   --turquoise-dark: #0b737d;
 }
 body {
-  /* height: 100%; */
-  /* margin: 0; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* padding: 0px; */
-  /* margin: 0px; */
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
   /* width: 100vw; */
   /* height: 100vw; */
 }
-body {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
 .contenedor-center {
   width: 50%;
   height: 50%;
 }
 .contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 80vw;
-  height: 70%;
-  border-radius: 5vh 15vw 5vh 15vw;
-  margin-top: 7vw;
-  text-align: justify;
-  font-size: calc(16px + 0.8vw);
-  font-style: italic;
-  color: var(--blue-ligth);
-  white-space: pre-line;
-  background-image: url(/assets/img/galeria/web1_15.jpg);
-  background-repeat: no-repeat;
+  width: 50vw;
+  height: 50vw;
+  max-width: 1920px;
+  max-height: 1080px;
+  /* background-image: url("../../assets/img/logo_favl_512x512.png"); */
+  /*background-image: url("../../assets/img/galeria/web1_18.jpg");*/
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
-.contenedor p {
-  padding: 5vw;
-}
-.referencia {
-  text-align: right;
-  font-style: italic;
-  font-size: 14px;
-  margin-top: 10px;
-  align-self: flex-end;
-}
+
 .menu {
   position: fixed;
   /* margin-top: 50px; */
@@ -69,6 +44,7 @@ body {
   height: 5vw;
   min-height: 60px;
   max-height: 100px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -76,6 +52,7 @@ body {
   background-color: var(--blue-ligth);
   color: var(--turquoise-dark);
   border-bottom: solid 3px var(--orange-medium);
+  /* justify-content: space-between; */
   align-items: center;
   z-index: 1050;
 }
@@ -94,6 +71,11 @@ body {
 nav {
   max-height: 120px;
   height: 12vw;
+}
+footer {
+  /* max-height: 50px;
+  height: 10vw; 
+  border-top: solid 3px var(--orange-medium); */
 }
 nav a:link,
 a:visited,
@@ -174,45 +156,19 @@ footer {
   height: 20%;
   margin: 2px solid red;
 }
-/******/
-
 .carrusel {
-  width: 100vw;
-  max-width: 100%;
+  width: 17vw;
+  height: 17vw;
   margin: 10px;
+  min-width: 240px;
   border-radius: 10px;
   background-color: lightgray;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  box-sizing: border-box; /* Agregado */
 }
-
-.item {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box; /* Agregado */
-}
-
-.item img {
-  max-width: 100%;
-  border-radius: 5%;
-  object-fit: cover;
-}
-
 /******/
-@media (width <= 1280px) {
-  .contenedor {
-    width: 80vw;
-  }
-  .carrusel {
-    flex-direction: column;
-  }
-}
 @media (width <= 640px) {
   .menu {
     /* background: blue; */
@@ -224,22 +180,6 @@ footer {
   a:visited,
   a:active {
     /* font-size: 1rem; */
-  }
-  .carrusel {
-    flex-direction: column;
-  }
-
-  .contenedor {
-    width: 100vw;
-    height: 100%;
-    border-radius: 0 0 0 0;
-    font-size: calc(14px + 0.5vw);
-    line-height: 1.5em;
-    background-image: url(/assets/img/galeria/web1_17.jpg);
-    background-size: 150vw;
-  }
-  .contenedor p {
-    /* padding: 0vw; */
   }
 }
 
@@ -257,49 +197,4 @@ footer {
   a:active {
     font-size: 0.8rem;
   }
-  .contenedor {
-    width: 80vw;
-  }
-  .carrusel {
-    flex-direction: column;
-  }
-  .contenedor {
-    width: 100vw;
-    height: 100%;
-    border-radius: 0 0 0 0;
-    font-size: calc(16px + 0.5vw);
-    line-height: 2em;
-    background-size: 180vw;
-    background-image: url(/assets/img/galeria/web1_17.jpg);
-  }
-  .contenedor p {
-    padding: 5vw;
-  }
-}
-
-.carrusel2 {
-  width: 100vw;
-  margin: 10px;
-  border-radius: 10px;
-  overflow: hidden; /* Para ocultar el desbordamiento */
-}
-
-.slider {
-  display: flex;
-  overflow-x: scroll; /* Habilita el desplazamiento horizontal */
-  scroll-snap-type: x mandatory; /* Establece el desplazamiento en modo obligatorio */
-  scrollbar-width: none; /* Oculta la barra de desplazamiento */
-  -ms-overflow-style: none; /* Oculta la barra de desplazamiento en IE/Edge */
-}
-
-.slider::-webkit-scrollbar {
-  display: none; /* Oculta la barra de desplazamiento en Webkit */
-}
-
-.slider img {
-  flex: 0 0 auto;
-  scroll-snap-align: start; /* Asegura que las imágenes se alineen correctamente */
-  width: 50%;
-  height: auto;
-  object-fit: cover;
 }
