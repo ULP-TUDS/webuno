@@ -48,7 +48,7 @@ body {
 
   /* color: var(--blue-ligth); */
   white-space: pre-line;
-  background-image: url(""../img/galeria/web1_18.jpg");
+  background-image: url("../img/galeria/web1_18.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -287,18 +287,18 @@ footer {
 
 .slider {
   display: flex;
-  overflow-x: scroll; 
-  scroll-snap-type: x mandatory; 
-  scrollbar-width: none; 
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
 }
 
 .slider::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 .slider img {
   flex: 0 0 auto;
-  scroll-snap-align: start; 
+  scroll-snap-align: start;
   width: 50%;
   height: auto;
   object-fit: cover;
