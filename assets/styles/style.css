@@ -195,18 +195,23 @@ footer {
   border-radius: 5%;
   object-fit: cover;
 }
+.contenedor-contacto {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+}
 .contacto {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: 60vw;
-  height: 74vh;
+  margin: 25px;
+  width: 100vw;
+  height: 70vh;
   text-align: justify;
   font-size: calc(16px + 0.8vw);
   font-style: italic;
   color: var(--turquoise-dark);
-  white-space: pre-line;
+
   /* width: 600px; */
   border: 1px solid var(--blue-dark);
   background-color: var(--blue-ligth);
@@ -215,15 +220,20 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 5px rgba(1, 65, 77, 0.19);
 }
+
+.contacto > img{
+   width: 10vw;
+   background-color: #ab420a;
+}
 .form-contacto {
   /* border: 1px solid var(--blue-dark); */
   border-radius: 5px;
-  width: 50vw;
-  min-width: 250px;
+  width: 25vw;
+  min-width: 50px;
   height: 1vw;
   padding: 5px;
-  margin-top: 10px;
-  min-height: 30px;
+  /* margin-top: px; */
+  min-height: 25px;
 }
 /* css por id*/
 
@@ -239,14 +249,25 @@ footer {
   height: 100px;
   min-height: 80px;
 }
-.form-contacto #enviar {
-  width: 2px;
-  min-width: 30px;
-  max-width: 35px;
+.contacto img {
+  width: 40vw;
+  border-radius:10px;
+}
+.contacto #enviar {
+  width: 25.5vw;
+  height: 30px;
+  font-size: 16px
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: flex-end; */
+  color: red;
+}
+#enviar:hover {
+  color: white;
+  font-size: 20px;
   background-color: #ab420a;
+  transition: background-color 0.3s;
+  transform: scale(1.1,1.3);
 }
 
 /******/
