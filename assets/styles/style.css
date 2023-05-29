@@ -179,7 +179,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  box-sizing: border-box;
+  box-sizing: border-box; */
 }
 
 .item {
@@ -188,17 +188,73 @@ footer {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  padding: 2vw;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .item img {
   max-width: 100%;
   border-radius: 5%;
   object-fit: cover;
+  filter: blur(3px)
+
+}
+.item-centro {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2vw;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.item-centro img {
+  max-width: 150%;
+  border-radius: 5%;
+  object-fit: cover;
+  z-index: 1050;
 }
 .contenedor-contacto {
   display: flex;
   flex-direction: row;
   width: 90vw;
+}
+.botones-carrusel{
+  /* width: 100vw;
+  max-width: 100%; */
+  margin: 10px;
+  border-radius: 10px;
+  /* background-color: lightgray; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 125px; */
+  /* box-sizing: border-box; */
+}
+
+.img-anterior{
+  background-image: url("/assets/img/icons/arrow_chevron_left_icon_176221.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: 120px;
+  width: 50px;
+  height: 25px;
+  padding: 5px;
+  
+}
+.img-posterior{
+    background-image: url("/assets/img/icons/arrow_right_chevron_icon_176220.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 120px;
+    width: 50px;
+    height: 25px;
+    padding: 5px;
 }
 .contacto {
   display: flex;
