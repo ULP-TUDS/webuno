@@ -6,6 +6,7 @@
   --orange-medium: #f3832f;
   --orange-dark: #ab420a;
   --turquoise-ligth: #a8f1f7;
+  --turquoise-ligth-trasparente: #a8f1f73a;
   --turquoise-medium: #10a5b3;
   --turquoise-dark: #0b737d;
 }
@@ -29,6 +30,7 @@ body {
   flex-direction: column;
   width: 80vw;
   height: 74vh;
+  border: 1px solid red;
   border-radius: 5vh 15vw 5vh 15vw;
   margin-top: 7vw;
   text-align: justify;
@@ -173,13 +175,13 @@ footer {
   max-width: 100%;
   margin: 10px;
   border-radius: 10px;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 .item {
@@ -197,8 +199,9 @@ footer {
   max-width: 100%;
   border-radius: 5%;
   object-fit: cover;
-  filter: blur(3px)
-
+  opacity: 0.6;
+  filter: blur(1px);
+  margin-top: 5vw;
 }
 .item-centro {
   flex: 1;
@@ -211,7 +214,7 @@ footer {
   padding-bottom: 0px;
 }
 .item-centro img {
-  max-width: 150%;
+  max-width: 180%;
   border-radius: 5%;
   object-fit: cover;
   z-index: 1050;
@@ -220,76 +223,87 @@ footer {
   display: flex;
   flex-direction: row;
   width: 90vw;
+  opacity: 0.5;
 }
-.botones-carrusel{
-  /* width: 100vw;
-  max-width: 100%; */
-  margin: 10px;
-  border-radius: 10px;
-  /* background-color: lightgray; */
+/* botones carrusel*/
+
+.botones-carrusel {
+  width: 15vw;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* padding: 125px; */
-  /* box-sizing: border-box; */
+}
+.botones-carrusel button {
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s ease;
+  margin-right: 30px;
+}
+.botones-carrusel button:last-child {
+  margin-right: 0;
+}
+.botones-carrusel button:hover {
+  transform: scale(1.1);
+}
+.botones-carrusel button img {
+  width: 10vw;
+  max-width: 100%;
 }
 
-.img-anterior{
-  background-image: url("/assets/img/icons/arrow_chevron_left_icon_176221.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-size: 120px;
-  width: 50px;
-  height: 25px;
-  padding: 5px;
-  
-}
-.img-posterior{
-    background-image: url("/assets/img/icons/arrow_right_chevron_icon_176220.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-size: 120px;
-    width: 50px;
-    height: 25px;
-    padding: 5px;
-}
 .contacto {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 25px;
-  width: 100vw;
-  height: 70vh;
+  width: 45vw;
+  height: 60vh;
   text-align: justify;
   font-size: calc(16px + 0.8vw);
   font-style: italic;
-  color: var(--turquoise-dark);
-
-  /* width: 600px; */
-  border: 1px solid var(--blue-dark);
-  background-color: var(--blue-ligth);
-  /* background-color: var(--blue-medium); */
+  background-color: var(--turquoise-ligth-trasparente);
   border-radius: 10px;
+  border-radius: 5vh 15vw 5vh 15vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 5px rgba(1, 65, 77, 0.19);
 }
 
-.contacto > img{
-   width: 10vw;
-   background-color: #ab420a;
+.contacto > img {
+  width: 10vw;
+  background-color: #ab420a;
 }
 .form-contacto {
-  /* border: 1px solid var(--blue-dark); */
   border-radius: 5px;
   width: 25vw;
   min-width: 50px;
   height: 1vw;
   padding: 5px;
-  /* margin-top: px; */
   min-height: 25px;
+}
+.contacto div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto button {
+  width: auto;
+  /* justify-self: flex-end; */
+  text-align: center;
+  align-content: flex-start;
+
+  margin-top: 10px;
+  width: 155px;
+  padding: 15px;
+}
+.boton-contacto {
+  width: auto;
+  margin-top: 10px;
+  width: 155px;
+  padding: 15px;
+  color: red;
+  text-align: center;
+  /* align-items: flex-end; */
+  justify-self: flex-end;
+  /* align-items: center; */
+  background-color: #ab420a;
 }
 /* css por id*/
 
@@ -298,24 +312,19 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 #detalle {
-  /* border: 1px solid red; */
   border-radius: 5px;
   height: 100px;
   min-height: 80px;
 }
 .contacto img {
   width: 40vw;
-  border-radius:10px;
+  border-radius: 10px;
 }
 .contacto #enviar {
   width: 25.5vw;
   height: 30px;
-  font-size: 16px
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: flex-end; */
+  font-size: 16px;
   color: red;
 }
 #enviar:hover {
@@ -323,7 +332,7 @@ footer {
   font-size: 20px;
   background-color: #ab420a;
   transition: background-color 0.3s;
-  transform: scale(1.1,1.3);
+  transform: scale(1.1, 1.3);
 }
 
 /******/
