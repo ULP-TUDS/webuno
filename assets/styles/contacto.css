@@ -1,16 +1,22 @@
 /** estilo validaciones**/
-.error {
+.error_none {
   display: none;
-  /* border-radius: 50%; */
+}
+.error {
+  display: inline;
   width: 25vw;
   min-width: 50px;
   align-items: center;
   text-align: center;
-  /* font-size: 0.75em; */
-  padding: 2px;
+  font-size: 0.7em;
+  padding-left: 5px;
+  padding-right: 5px;
   color: red;
-  /* border: 2px solid red; */
-  /* background-color: rgba(251, 112, 26, 0.5); */
+  margin-left: 25px;
+}
+.error-back {
+  border: 2px solid red;
+  background-color: rgba(251, 112, 26, 0.5);
 }
 .boton-contacto {
   display: flex;
@@ -30,4 +36,12 @@
 }
 #detalle {
   font-style: italic;
+}
+.count_char {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  font-size: 0.7em;
+  top: 10px;
+  left: 10px;
 }
