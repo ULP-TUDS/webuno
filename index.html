@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+  <!--
+Al menos 3 páginas distintas
+Principal Con menú de navegación y enlaces a las demás páginas Artículo 
+Formulario de contacto Al menos 3 campos. Combinar validaciones de campos obligatorios, longitud máxima 
+y uso de expresiones regulares.
+Los datos enviados deben ser validados vía javascript (no basta con HTML5) 
+y en caso de estar bien, se debe agregar html a la página mostrando los datos enviados (usando createElement).
+En caso de haber errores, deben ser mostrados manipulando el HTML (no usar alertas nativas).
+
+Uso de carrousel
+Debe ser creado por el estudiante, es decir, no de una librería o totalmente copiado de un tutorial. 
+La rotación de imágenes debe estar implementada en javascript y usando arrays.
+Uso de estilos vistos en clase
+Debe ser desarrollado por el estudiante, es decir sin uso de frameworks.
+Uso de fuentes, posicionado, colores, fondos, cambio del layout con float o flex, etc.
+  -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +24,7 @@
     <title>WEB UNO</title>
   </head>
   <body>
-    <div class="contenedor" id="index">
+    <div class="contenedor">
       <nav class="menu">
         <img class="logo" src="./assets/img/logo_250.png" />
         <a href=" ./index.html">Home</a>
@@ -16,19 +32,34 @@
         <!-- <a href=" ./zonas.html">Zonas</a> -->
         <a href=" ./contacto.html">Contacto</a>
       </nav>
-      <p>
-        "Corre, el borde está cerca. Continúa sin miedo al vacío. El ala te
-        sostiene mientras la tierra se aleja. Elevándote, percibes cómo la
-        tierra se extiende sin límites bajo tus pies. No temas, tu ala te
-        sostiene, incluso cuando creas que caerás en picada, volarás. Tendrás
-        sensaciones y recuerdos inolvidables. Hazlo, volverás una y otra vez."
-      </p>
+      <!-- <h3>Vola en PARAPENTE</h3> -->
+      <div class="inicio">
+        <a href="./contacto.html"><h3>Vola en PARAPENTE</h3></a>
+        <h4>
+          ¡Ven y vive una experiencia única llena de emoción y maravilla en el
+          cielo!
+        </h4>
+        <article>
+          ¡Vuela en parapente y descubre la emocionante sensación de un vuelo de
+          bautismo! Experimenta la libertad absoluta mientras te elevas hacia el
+          cielo, sintiendo la adrenalina y el viento en tu rostro. Contempla
+          impresionantes vistas panorámicas que te dejarán sin aliento. Nuestros
+          pilotos expertos te guiarán en esta aventura segura, sin necesidad de
+          experiencia previa. Conéctate con la naturaleza y deslízate entre las
+          nubes, creando recuerdos que durarán toda la vida. Haz realidad tu
+          sueño de volar y reserva ahora mismo tu vuelo de bautismo en
+          parapente.
+        </article>
+      </div>
       <footer>
         <div class="logo-favl">
-          <img
-            src="./assets/img/logo_favl_512x512.png"
-            alt="Federacion Argentina de Vuelo Libre"
-          />
+          <a href="https://www.favl.com.ar" target="_blank">
+            <img
+              class="logofavl"
+              src="./assets/img/logo_favl_512x512.png"
+              alt="Federacion Argentina de Vuelo Libre"
+            />
+          </a>
         </div>
         <div class="marca">Parapente San Luis &copy; 2023</div>
         <div class="redes">
