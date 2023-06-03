@@ -6,7 +6,6 @@ let class_error = "";
 /** Iniciar variables **/
 
 let div_inicio = document.querySelector("#inicio");
-let form_formulario = document.querySelector("#formulario");
 let form_nombre = document.querySelector("#nombre");
 let span_nombre = document.querySelector("#msg_nombre");
 let form_apellido = document.querySelector("#apellido");
@@ -22,6 +21,7 @@ let error_bool = false;
 let cout_char = "";
 // cuento caracteres detalle
 debug(form_detalle.value.length);
+
 form_detalle.addEventListener("keyup", function () {
   span_count_char.innerHTML =
     "Caracteres " + form_detalle.value.length + " /250";
@@ -82,10 +82,27 @@ function verifyForm() {
     error_bool = true;
   }
   if (!error_bool) {
-    form_formulario.style.display = "none";
-
-    debug("form_formulario.style.display 85");
-  } else {
+    let todo = document.getElementById("todo"); // div en html
+    let form_formulario = document.getElementById("formulario");
+    let div = document.createElement("div");
+    let todo_input = document.querySelectorAll("form input");
+    form_formulario.remove(); // remuevo formualrio
+    let titulo = document.createElement("h3");
+    titulo.innerHTML = "Su mensaje fue enviado con los siguientes datos";
+    todo.appendChild(div);
+    div.appendChild(titulo);
+    for (i = 0; i < todo_input.length - 1; i++) {
+      if (todo_input[i].vale != "") {
+        let dato = todo_input[i];
+        let campo = document.createElement("p");
+        campo.innerHTML =
+          todo_input[i].id.toUpperCase() + ": " + todo_input[i].value;
+        div.appendChild(campo);
+        //        console.log("ID:", todo_input[i].id);
+        //        console.log(todo[i].value);
+      }
+      debug("form_formulario.style.display 85");
+    }
     debug("form_formulario.style.display 87");
   }
   return false;
