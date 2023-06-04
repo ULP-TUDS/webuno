@@ -31,19 +31,26 @@
         <form id="formulario" onsubmit="return verifyForm();">
           <div>
             <label for="nombre">Nombre</label><span id="msg_nombre" class="error_none"></span>
-            <input id="nombre" class="form-contacto" type="text" name="nombre" value="La casa dle poder" >
+            <input id="nombre" class="form-contacto" type="text" name="nombre" value="" >
           </div>
           <div>
             <label for="apellido">Apellido</label><span id="msg_apellido" class="error_none"></span>
-            <input id="apellido" class="form-contacto" type="text" name="apellido" value="GOMEZ"></input>
+            <input id="apellido" class="form-contacto" type="text" name="apellido" value=""></input>
           </div>
           <div>
             <label  for="mail">Email</label><span id="msg_mail" class="error_none"></span>
-            <input id="mail" class="form-contacto" type="text" name="email" value="asdf@g.com"></input>
+            <input id="mail" class="form-contacto" type="text" name="email" value=""></input>
           </div>
           <div>
             <label for="consulta">Asunto</label><span id="msg_consulta" class="error_none"></span>
-            <input id="consulta" class="form-contacto" type="text" name="asunto" value="NO SE IQE " ></input>
+            <!-- <input id="consulta" class="form-contacto" type="text" name="asunto" value="" placeholder="" ></input> -->
+            <select id="consulta" class="form-contacto">
+              <option disabled selected value="">Seleccione una opcion </option>
+              <option value="Vuelo bautismo">Vuelo bautismo</option>
+              <option value="Curso piloto">Curso piloto </option>
+              <option value="Compra Equipo">Compra equipo</option>
+              <option value="Otra consulta">Otra consulta</option>
+            </select>
           </div>
           <div>
             <label  for="detalle">Detalle</label><span id="msg_detalle" class="error_none"></span>
