@@ -103,14 +103,17 @@ function verifyForm() {
     }
     debug(form_consulta);
     debug(form_detalle);
-    let consulta1 = document.createElement("p");
-    consulta1.innerHTML =
+    let consulta = document.createElement("p");
+    consulta.innerHTML = form_mail.id.toUpperCase() + ": " + form_mail.value;
+    div.appendChild(consulta);
+    consulta = document.createElement("p");
+    consulta.innerHTML =
       form_consulta.id.toUpperCase() + ": " + form_consulta.value;
-    div.appendChild(consulta1);
-    let consulta2 = document.createElement("p");
-    consulta2.innerHTML =
+    div.appendChild(consulta);
+    consulta = document.createElement("p");
+    consulta.innerHTML =
       form_detalle.id.toUpperCase() + ": " + form_detalle.value;
-    div.appendChild(consulta2);
+    div.appendChild(consulta);
   }
   debug(form_consulta.value);
   debug(form_detalle.value);
