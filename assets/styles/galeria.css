@@ -1,0 +1,123 @@
+.item {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2vw;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#izquierda {
+  max-width: 20vw;
+  border-radius: 5%;
+  object-fit: cover;
+  opacity: 0.6;
+  filter: blur(1px);
+  margin-right: -25vw;
+  /* margin-left: 90vw; */
+  /* margin-right: -80vw; */
+}
+#derecha {
+  max-width: 20vw;
+  border-radius: 5%;
+  object-fit: cover;
+  opacity: 0.6;
+  filter: blur(1px);
+  margin-left: -25vw;
+  /* margin-left: 90vw; */
+  /* margin-right: -80vw; */
+}
+.item-centro {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2vw;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.item-centro img {
+  max-width: 45vw;
+  border-radius: 5%;
+  object-fit: cover;
+  z-index: 1050;
+}
+.botones-carrusel {
+  width: 15vw;
+  display: flex;
+  flex-direction: row;
+}
+.botones-carrusel button {
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s ease;
+  margin-right: 30px;
+}
+.botones-carrusel button:last-child {
+  margin-right: 0;
+}
+i.botones-carrusel button:hover {
+  transform: scale(1.1);
+}
+.botones-carrusel button img {
+  width: 10vw;
+  max-width: 100%;
+}
+@media (width <= 1280px) {
+  .contenedor {
+    width: 70vw;
+  }
+  .carrusel {
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+  .item-centro img {
+    max-width: 75vw;
+  }
+  #izquierda {
+    max-width: 20vw;
+    border-radius: 5%;
+    object-fit: cover;
+    opacity: 0.6;
+    filter: blur(1px);
+    margin-top: -10vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #derecha {
+    max-width: 20vw;
+    border-radius: 5%;
+    object-fit: cover;
+    opacity: 0.6;
+    filter: blur(1px);
+    margin: 0;
+    margin-bottom: -10vw;
+  }
+}
+@media (width <= 640px) {
+  .carrusel {
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+}
+@media (width <= 380px) {
+  .carrusel {
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+  .item-centro img {
+    max-width: 80vw;
+  }
+  .item img {
+    max-width: 30vw;
+    border-radius: 5%;
+    object-fit: cover;
+    opacity: 0.6;
+    filter: blur(1px);
+    margin-top: 5vw;
+  }
+}
