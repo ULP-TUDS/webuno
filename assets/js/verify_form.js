@@ -22,7 +22,7 @@ let span_consulta = document.querySelector("#msg_consulta");
 let form_detalle = document.querySelector("#detalle");
 let span_detalle = document.querySelector("#msg_detalle");
 let span_count_char = document.querySelector("#count_char");
-let error_bool = false;
+let error_bool;
 let cout_char = "";
 // cuento caracteres detalle
 debug(form_detalle.value.length);
@@ -42,6 +42,7 @@ function removerError(class_error) {
 }
 
 function verifyForm() {
+  error_bool = false;
   /** borrado clases error y error_back **/
   removerError("error");
   removerError("error-back");
@@ -98,12 +99,20 @@ function verifyForm() {
         campo.innerHTML =
           todo_input[i].id.toUpperCase() + ": " + todo_input[i].value;
         div.appendChild(campo);
-        //        console.log("ID:", todo_input[i].id);
-        //        console.log(todo[i].value);
       }
-      debug("form_formulario.style.display 85");
     }
-    debug("form_formulario.style.display 87");
+    debug(form_consulta);
+    debug(form_detalle);
+    let consulta1 = document.createElement("p");
+    consulta1.innerHTML =
+      form_consulta.id.toUpperCase() + ": " + form_consulta.value;
+    div.appendChild(consulta1);
+    let consulta2 = document.createElement("p");
+    consulta2.innerHTML =
+      form_detalle.id.toUpperCase() + ": " + form_detalle.value;
+    div.appendChild(consulta2);
   }
+  debug(form_consulta.value);
+  debug(form_detalle.value);
   return false;
 }

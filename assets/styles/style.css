@@ -166,6 +166,7 @@ footer {
   height: 1vw;
   min-height: 25px;
 }
+
 button .form-contacto {
   display: flex;
   align-self: flex-end;
