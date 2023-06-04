@@ -10,18 +10,18 @@ function debug(data) {
 }
 /** Iniciar variables **/
 
-let div_inicio = document.querySelector("#inicio");
-let form_nombre = document.querySelector("#nombre");
-let span_nombre = document.querySelector("#msg_nombre");
-let form_apellido = document.querySelector("#apellido");
-let span_apellido = document.querySelector("#msg_apellido");
-let form_mail = document.querySelector("#mail");
-let span_mail = document.querySelector("#msg_mail");
-let form_consulta = document.querySelector("#consulta");
-let span_consulta = document.querySelector("#msg_consulta");
-let form_detalle = document.querySelector("#detalle");
-let span_detalle = document.querySelector("#msg_detalle");
-let span_count_char = document.querySelector("#count_char");
+let div_inicio = document.getElementById("inicio");
+let form_nombre = document.getElementById("nombre");
+let span_nombre = document.getElementById("msg_nombre");
+let form_apellido = document.getElementById("apellido");
+let span_apellido = document.getElementById("msg_apellido");
+let form_mail = document.getElementById("mail");
+let span_mail = document.getElementById("msg_mail");
+let form_consulta = document.getElementById("consulta");
+let span_consulta = document.getElementById("msg_consulta");
+let form_detalle = document.getElementById("detalle");
+let span_detalle = document.getElementById("msg_detalle");
+let span_count_char = document.getElementById("count_char");
 let error_bool;
 let cout_char = "";
 // cuento caracteres detalle
@@ -61,7 +61,7 @@ function verifyForm() {
     error_bool = true;
   }
   if (
-    !/^([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)?$/.test(form_mail.value)
+    !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(form_mail.value)
   ) {
     span_mail.classList.add("error");
     form_mail.classList.add("error-back");
