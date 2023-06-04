@@ -19,23 +19,23 @@
       </nav>
       <div class="carrusel">
         <!-- <div class="img-anterior"></div> -->
-        <div class="item">
+        <div class="item-lateral">
           <img id="izquierda" src="./assets/img/galeria/web1_1.jpg" />
         </div>
         <div class="item-centro">
-          <img src="./assets/img/galeria/web1_2.jpg" />
+          <img id="centro" />
         </div>
-        <div class="item">
-          <img id="derecha" src="./assets/img/galeria/web1_3.jpg" />
+        <div class="item-lateral">
+          <img id="derecha" />
         </div>
       </div>
       <div class="botones-carrusel">
-        <button>
+        <button onclick="cambioImagen(-1)">
           <img
             src="./assets/img/icons/arrow_go_back_left_circle_icon_176211.svg"
           />
         </button>
-        <button>
+        <button onclick="cambioImagen(1)">
           <img src="./assets/img/icons/arrow_right_circle_icon_176215.svg" />
         </button>
       </div>

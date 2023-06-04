@@ -147,28 +147,7 @@ footer {
   margin-right: 5px;
   border-radius: 50%;
 }
-/******/
 
-.carrusel1 {
-  width: 100%;
-  height: 20%;
-  margin: 2px solid red;
-}
-/******/
-
-.carrusel {
-  width: 100vw;
-  max-width: 100%;
-  margin: 10px;
-  border-radius: 10px;
-  /* background-color: lightgray; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  box-sizing: border-box;
-}
 .contenedor-contacto {
   display: flex;
   flex-direction: row;

@@ -1,8 +1,13 @@
 /** para debug **/
-// cambiar entorno DEV
+// entorno DEV
 const DEV = true;
 let data = "";
 let class_error = "";
+function debug(data) {
+  if (DEV) {
+    console.log(data);
+  }
+}
 /** Iniciar variables **/
 
 let div_inicio = document.querySelector("#inicio");
@@ -28,11 +33,6 @@ form_detalle.addEventListener("keyup", function () {
   debug(form_detalle.value.length);
 });
 
-function debug(data) {
-  if (DEV) {
-    console.log(data);
-  }
-}
 function countChar() {}
 function removerError(class_error) {
   let form_error = document.getElementsByClassName(class_error);
