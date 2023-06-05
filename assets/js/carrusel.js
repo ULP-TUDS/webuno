@@ -67,7 +67,15 @@ function cambioImagen(index) {
     indice_izq = 0;
   }
   debug(index + " - " + indice + " - " + indice_der + " - " + indice_izq);
-  centro.setAttribute("src", "./assets/img/galeria/" + imagenes[indice]);
+  izquierda.style.backgroundImage =
+    "url('./assets/img/galeria/" + imagenes[indice_izq] + "')";
+  centro.style.backgroundImage =
+    "url('./assets/img/galeria/" + imagenes[indice] + "')";
+  derecha.style.backgroundImage =
+    "url('./assets/img/galeria/" + imagenes[indice_der] + "')";
   izquierda.setAttribute("src", "./assets/img/galeria/" + imagenes[indice_izq]);
   derecha.setAttribute("src", "./assets/img/galeria/" + imagenes[indice_der]);
+  // centro.setAttribute("src", "./assets/img/galeria/" + imagenes[indice]);
+  // izquierda.setAttribute("src", "./assets/img/galeria/" + imagenes[indice_izq]);
+  // derecha.setAttribute("src", "./assets/img/galeria/" + imagenes[indice_der]);
 }
