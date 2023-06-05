@@ -33,12 +33,11 @@ body {
   font-size: calc(16px + 0.8vw);
   font-style: italic;
   color: white;
-  /* color: var(--blue-ligth); */
   background-image: url("../img/galeria/web1_18.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
-/**/
+
 .inicio {
   display: flex;
   flex-direction: column;
@@ -56,9 +55,9 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
 }
 
-/* article {
+article {
   white-space: pre-line;
-} */
+}
 
 .menu {
   position: fixed;
@@ -218,22 +217,21 @@ button .form-contacto {
 
   .contenedor {
     width: 100vw;
-    height: 100%;
+    height: 80%;
+    border: 0px;
     border-radius: 0 0 0 0;
     font-size: calc(14px + 0.5vw);
     line-height: 1.5em;
     background-image: url("../img/galeria/web1_17.jpg");
     background-size: 150vw;
-  }
-  .contenedor p {
-    /* padding: 0vw; */
+    margin-top: 15px;
   }
 }
 @media (width <= 380px) {
-  .menu {
-    /* background: red; */
+  .inicio {
+    width: 70vw;
+    height: 80vh;
   }
-
   .logo {
     display: none;
   }
@@ -244,7 +242,8 @@ button .form-contacto {
     font-size: 0.8rem;
   }
   .contenedor {
-    width: 80vw;
+    width: 100vw;
+    border-radius: 0 0 0 0;
   }
   .carrusel {
     flex-direction: column;

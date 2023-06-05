@@ -1,7 +1,6 @@
 .carrusel {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   justify-content: center;
   width: 80%;
   height: 80%;
@@ -14,7 +13,6 @@
 }
 #izquierda {
   margin-right: -15vw;
-  /* border-radius: 25% 0% 0% 25%; */
   background-image: url("../img/galeria/web1_2.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -23,12 +21,10 @@
 }
 #derecha {
   margin-left: -15vw;
-  /* border-radius: 0% 25% 25% 0%; */
   background-image: url("../img/galeria/web1_3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  /* background-size: cover; */
   opacity: 0.65;
 }
 .item-centro {
@@ -41,7 +37,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  padding: 5px;
   z-index: 9999;
 }
 .botones-carrusel {
@@ -75,14 +70,15 @@
 }
 @media (width <= 1280px) {
   .contenedor {
-    width: 70vw;
+    width: 100vw;
   }
   .carrusel {
     flex-direction: column;
-    margin-top: 10vh;
+    margin-top: 1vh;
   }
   .item-centro {
-    max-width: 33vw;
+    max-width: 80vw;
+    max-height: 80vh;
   }
   #izquierda {
     margin-right: 0;
@@ -101,9 +97,11 @@
   .carrusel {
     flex-direction: column;
     margin-top: 10vh;
+    width: 100%;
+    height: 100%;
   }
   .item-centro img {
-    max-width: 80vw;
+    max-width: 180vw;
   }
   .item img {
     max-width: 30vw;
