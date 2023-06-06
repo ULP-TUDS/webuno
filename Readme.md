@@ -9,7 +9,7 @@
 </div>
  <div align="left">
      <a href="https://ulp-tuds.github.io/webuno/">
-    <img src="https://github.com/ULP-TUDS/webuno/blob/main/ulp.png" alt="Logo" width="200" height="200">
+    <img src="https://github.com/ULP-TUDS/webuno/blob/main/logo_webI.png" alt="Logo" width="200" height="200">
     Pagina presentada
   </a>  
 </div>
